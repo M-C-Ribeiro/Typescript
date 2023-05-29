@@ -29,8 +29,39 @@
   - http://localhost:3000/orders
 
 ### Envio dos dados
+Para enviar os dados a serem cadastrados, deve-se selecionar a opção Json no Insomnia e enviar as informações da seguinte forma
 #### Categories
-
+```
+{
+  "name":"nome da categoria",
+  "icon":"emoji para categoria"
+ }
+ ```
+ 
 #### Products
+```
+{
+  "name":"nome do produto",
+  "description":"descrição do produto",
+  "imagePath":"caminho da imagem do produto
+  "price":"preço do produto",
+  "ingredients":"{
+                    "name":"nome do ingrediente",
+                    "icon":"ícone do ingrediente"
+                  },
+  "category":"número da categoria"
+}
+```
 
 #### Orders
+```
+{
+  "table":"mesa que pediu o produto",
+  "status":"descrição de como está o andamento do pedido",
+  "creatdAt":"data de quando o pedido foi realizado"
+  "products":{
+              "product":"número do produto do cardápio",
+              "quantity":"quantidade do produto"
+             }
+}
+```
